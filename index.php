@@ -28,7 +28,7 @@ get_header();
                 <?php
                 $my_posts = get_posts(
                     array(
-                        'numberposts' => 4,
+                        'numberposts' => -1,
                         'orderby' => 'rand',
                         'post_type' => 'post',
                         'suppress_filters' => true,
@@ -44,15 +44,13 @@ get_header();
                             <?php
                             $photos = get_field('галерея_авто');
                             if ($photos) {
-                                foreach ($photos as $photo) {
-                                    echo '<img src="' . esc_url($photo['url']) . '"  width="387"
-                                    height="258" alt="image"';
-                                }
+                                $first_photo = $photos[0]; // Get the first photo
+                                echo '<img src="' . esc_url($first_photo['url']) . '" width="387" height="258" alt="image">';
                             } else {
-                                echo '<img src="' . get_template_directory_uri() . '/src/img/img-placeholder.jpg" width="387"
-                                height="258" alt="image">';
+                                echo '<img src="' . get_template_directory_uri() . '/src/img/img-placeholder.jpg" width="387" height="258" alt="image">';
                             }
                             ?>
+
                         </div>
                         <h3 class="card__title"><?php the_title(); ?></h3>
                         <div class="card__wrapper">

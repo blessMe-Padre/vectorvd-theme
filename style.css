@@ -2158,6 +2158,7 @@ body {
     position: relative;
     border-radius: 6px;
     overflow: hidden;
+    height: 290px;
 }
 
 .image-wrapper img {

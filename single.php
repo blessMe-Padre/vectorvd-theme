@@ -78,6 +78,11 @@ get_header();
                             <span class="text-default-black font-medium"><?= get_field("тип_топлива"); ?></span>
                         </div>
 
+                        <div class="flex gap-5 mb-4">
+                            <span class="text-light-gray">Привод:</span>
+                            <span class="text-default-black font-medium"><?= get_field("привод"); ?></span>
+                        </div>
+
                         <div class="flex gap-5 mb-6">
                             <span class="text-light-gray">Год выпуска:</span>
                             <span class="text-default-black font-medium"><?= get_field("год_выпуска"); ?></span>
@@ -125,13 +130,10 @@ get_header();
                             <?php
                             $photos = get_field('галерея_авто');
                             if ($photos) {
-                                foreach ($photos as $photo) {
-                                    echo '<img src="' . esc_url($photo['url']) . '"  width="387"
-                                    height="258" alt="image"';
-                                }
+                                $first_photo = $photos[0]; // Get the first photo
+                                echo '<img src="' . esc_url($first_photo['url']) . '" width="387" height="258" alt="image">';
                             } else {
-                                echo '<img src="' . get_template_directory_uri() . '/src/img/img-placeholder.jpg" width="387"
-                                height="258" alt="image">';
+                                echo '<img src="' . get_template_directory_uri() . '/src/img/img-placeholder.jpg" width="387" height="258" alt="image">';
                             }
                             ?>
                         </div>
