@@ -1,0 +1,24 @@
+.breadcrumbs {
+    padding-top: 120px;
+    padding-bottom: 20px;
+}
+
+.breadcrumbs ul {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.breadcrumbs li {
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    color: rgba(0, 0, 0, 0.6);
+}
+
+.breadcrumbs li span {
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    color: #1d1d1d;
+}

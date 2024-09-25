@@ -1,0 +1,89 @@
+.contacts {
+    padding: 50px 0;
+}
+
+.contacts__wrapper {
+    display: grid;
+    gap: 20px;
+    grid-template-columns: 40% 60%;
+    min-height: 600px;
+}
+
+.contacts__info {
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.contacts__info a {
+    font-family: "Involve", sans-serif;
+    font-weight: 500;
+    font-size: 26px;
+    line-height: 1.4;
+    color: #151515;
+}
+
+.contacts__info p {
+    font-family: "Involve", sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.4;
+    color: #151515;
+    margin-bottom: 28px;
+}
+
+.contacts__info address {
+    font-family: "Involve", sans-serif;
+    font-weight: 500;
+    font-size: 26px;
+    line-height: 1.4;
+    color: #151515;
+    max-width: 232px;
+    margin-bottom: 28px;
+}
+
+.footer p {
+    font-family: "Involve", sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.4;
+    color: #151515;
+    text-align: center;
+}
+
+@media (max-width: 920px) {
+    .contacts__wrapper {
+        grid-template-columns: 1fr;
+    }
+
+    .contacts__map {
+        min-height: 300px;
+    }
+
+    .contacts__info {
+        padding: 0;
+    }
+}
+
+@media (max-width: 550px) {
+    .contacts__info a {
+        font-size: 20px;
+    }
+
+    .contacts__info address {
+        font-size: 20px;
+        max-width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .contacts__info p {
+        margin-bottom: 20px;
+    }
+
+    .contacts__logo {
+        margin: 0 auto;
+    }
+
+}

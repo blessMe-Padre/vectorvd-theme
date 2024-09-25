@@ -1,0 +1,27 @@
+.card {
+    padding-bottom: 20px;
+}
+
+.card__title {
+    font-family: "Involve", sans-serif;
+    font-weight: 500;
+    font-size: 22px;
+    text-align: center;
+    color: #151515;
+    margin: 20px auto;
+}
+
+.card__wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.card__price {
+    font-family: "Involve", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    text-align: center;
+    color: rgba(0, 0, 0, 0.7);
+}

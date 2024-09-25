@@ -1,0 +1,36 @@
+.catalog {
+    padding-top: 100px;
+    padding-bottom: 50px;
+}
+
+.catalog__list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+@media (max-width: 900px) {
+    .catalog__list {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 580px) {
+    .catalog__list {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .card__wrapper {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 450px) {
+    .catalog__list {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .card__wrapper {
+        flex-direction: row;
+    }
+}

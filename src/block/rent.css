@@ -1,0 +1,46 @@
+.rent {
+    padding: 50px 0;
+}
+
+.rent__wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.rent__item {
+    padding: 40px;
+    border: 1px solid #151515;
+    border-radius: 4px;
+}
+
+.rent__item img {
+    margin: 0 auto;
+    margin-bottom: 16px;
+}
+
+.rent__item p {
+    margin: 0 auto;
+    font-family: "Involve", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.4;
+    text-align: center;
+    color: #151515;
+    max-width: 275px;
+}
+
+@media (max-width: 500px) {
+    .rent {
+        padding: 30px 0;
+    }
+
+    .rent__wrapper {
+        grid-template-columns: 1fr;
+    }
+
+    .rent__item {
+        padding: 20px;
+    }
+
+}
