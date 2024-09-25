@@ -46,7 +46,7 @@
                         </li>
                     </ul>
                     <div class="flex gap-5 pl-4">
-                        <a href="https://wa.me/79147040414" target="_blank">
+                        <a href="https://wa.me/<?= get_field("whatsapp", "option"); ?>" target="_blank">
                             <img src="<?php echo get_template_directory_uri() ?>/src/img/whatsapp.svg" width="48"
                                 height="48" alt="whatsApp">
                         </a>

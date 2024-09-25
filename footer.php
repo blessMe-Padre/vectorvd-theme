@@ -14,14 +14,7 @@
                 <h2 class="text-start text-dark-green z-10  md:text-4xl text-xl pb-7 font-bold">Напишите нам</h2>
                 <p class="mb-4">Оставьте свои контакты и наш менеджер свяжется с вами для подтверждения</p>
                 <p class="js-popup-car-name"></p>
-
-                <div class="form-wrapper">
-                    <input type="text" class="form__input" placeholder="Введите Ваше имя" />
-
-                    <input type="tel" class="form__input" placeholder="Введите номер телефона">
-
-                    <input class="default-button" type="submit" value="Отправить">
-                </div>
+                <?php echo do_shortcode('[contact-form-7 id="93a1bde" title="Контактная форма 1"]'); ?>
             </div>
         </div>
     </section>

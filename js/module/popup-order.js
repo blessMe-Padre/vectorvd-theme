@@ -5,9 +5,10 @@ export const initPopupOrders = () => {
     if (carName) {
 
         const popupCarName = document.querySelector('.js-popup-car-name');
+        const orderHiddenInput = document.querySelector('.popup-hidden-input');
         const name = carName.innerText;
 
         popupCarName.innerText = name;
-        // orderHiddenInput.value = name;
+        orderHiddenInput.value = name;
     }
 }

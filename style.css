@@ -2265,3 +2265,26 @@ body {
         line-height: 2.5rem;
     }
 }
+
+.form-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.form-wrapper input[type="submit"] {
+    display: block;
+    display: flex;
+    width: 100%;
+    cursor: pointer;
+}
+
+.form__input {
+    height: 20px;
+    padding: 20px;
+    color: var(--default-black);
+    border: 1px solid var(--default-black);
+    margin-bottom: 20px;
+    display: flex;
+    width: 100%;
+}

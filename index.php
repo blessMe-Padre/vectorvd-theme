@@ -126,11 +126,12 @@ get_header();
                         <div class="flex items-center gap-5 mb-5">
                             <img src="<?php echo get_template_directory_uri() ?>/src/img/whatsapp.svg" width="40"
                                 height="40" alt="whatsApp">
-                            <a href="https://wa.me/79147065403" target="_blank">+7 914 706 54 03</a>
+                            <a href="https://wa.me/<?= get_field("whatsapp", "option"); ?>" target="_blank">+7 914 706
+                                54 03</a>
                         </div>
                         <p>Владивостокское время +7 часов к&nbsp;московскому</p>
-                        <address>Владивосток, ул. Руднева, 1</address>
-                        <a href="mailto:vladgruz999@mail.ru">vladgruz999@mail.ru</a>
+                        <address><?= get_field("адрес", "option"); ?></address>
+                        <a href="mailto:<?= get_field("email", "option"); ?>"><?= get_field("email", "option"); ?></a>
                     </div>
                 </div>
 
